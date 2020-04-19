@@ -1,0 +1,6 @@
+SELECT DISTINCT ?powiat ?label_pl ?label_en
+{
+    ?powiat wdt:P31 wd:Q247073;
+            rdfs:label ?label_pl , ?label_en.
+    filter(lang(?label_pl) = 'pl' && lang(?label_en) = 'en').
+}
